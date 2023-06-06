@@ -1,0 +1,749 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #340303;
+}
+
+.yellow-text{
+    color: #FFC100;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #340303;
+    height: 120px;
+    gap: 64px;
+}
+
+.navbar-item a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 3px;
+}
+
+.navbar-item a:hover{
+    border-bottom: 1px solid white;
+}
+
+.navbar .logo img{
+    width: 240px;
+    height: auto;
+}
+
+/* Section One */
+.section-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    background-color: #BF0536;
+}
+
+.section-one .title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    color: white;
+}
+
+/* Section Two */
+.section-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4C0000;
+    padding: 6rem 4rem;
+    gap: 6rem;
+}
+
+.section-two .vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-two .vision .vision-title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    color: white;
+}
+
+.section-two .vision .vision-desc{
+    width: 700px;
+    text-align: center;
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 1.8rem;
+}
+
+.section-two .mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-two .mission .mission-title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    color: white;
+}
+
+.section-two .mission .mission-desc{
+    width: 700px;
+    text-align: center;
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 1.8rem;
+}
+
+.section-two .history{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-two .history .history-title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    color: white;
+}
+
+.section-two .history .history-content{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.section-two .history .history-content #old_pic{
+    width: 400px;
+}
+
+.history .history-content .history-desc #flag{
+    width: 40px;
+}
+
+.history .history-content .history-desc .year{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    color: white;
+}
+
+.history .history-content .history-desc .story{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    width: 400px;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #340303;
+    padding: 3rem 8rem 3rem 8rem;
+}
+
+.footer .wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer #logo{  
+    width: 250px;
+}
+
+.footer .footer-content{
+    display: flex;
+    padding: 2rem 4rem 2rem 4rem;
+    justify-content: center;
+    gap: 12rem;
+    margin-bottom: 1.8rem;
+}
+
+.footer-content .desc-box{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.desc-box .desc-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.desc-box .desc-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.desc-box .desc-content .desc-info{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.desc-box .desc-content .desc-info p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.desc-content .desc-info .info-logo {
+    width: 18px;
+    height: 22px;
+}
+
+.desc-content .desc-info .social-logo {
+    width: 24px;
+}
+
+.form .form-input{
+    padding: 8px 60px 8px 12px;
+    border-radius: 8px;
+    border-color: transparent;
+}
+
+.form .form-input::placeholder{
+    font-size: 12px;
+}
+
+.form .form-button{
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #BF0536;
+    border-color: transparent;
+}
+
+.form .form-button:hover{
+    background-color: #880000;
+}
+
+.form-button p{
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.copyright p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+}
+
+/* Hamburger */
+.navbar #hamburger-button{
+    display: none;
+}
+
+#hamburger-menu{
+    display: none;
+}
+
+.hamburger-item a{
+    display: none;
+}
+
+/* Keyframes */
+@keyframes dropdown{
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+/* Media Rule */
+/* Max 1200px */
+@media only screen and (max-width: 1200px) {
+
+    /* Navbar */
+    .navbar{
+        justify-content: space-around;
+    }
+
+    .navbar .logo img{
+        width: 150px;
+    }
+
+    .navbar .navbar-item{
+        display: none;
+    }
+
+    /* Hamburger */
+    .navbar #hamburger-button{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        display: flex; 
+        cursor: pointer;
+    }
+    
+    #hamburger-button #hamburger-img{
+        border: none;
+        width: 70px;
+        height: 70px;  
+    }
+    
+    #hamburger-menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #340303;
+        height: 300px;
+        padding-bottom: 1rem;
+        gap: 26px;
+        animation: dropdown 200ms ease-in-out forwards;
+        transform-origin: top center;
+    }
+    
+    .hamburger-item a{
+        text-decoration: none;
+        text-align: right;
+        color: white;
+        font-size: 16px;
+        display: flex;
+    }
+
+    .hamburger-item a:hover{
+        border-bottom: 1px solid white;
+    }
+
+    /* Section One */
+    .section-one{
+        height: 200px;
+    }
+
+    .section-one .title{
+        font-size: 36px;
+    }
+
+    /* Section Two */
+    .section-two{
+        padding-bottom: 3rem;
+        padding-top: 4rem;
+    }
+
+    .section-two .vision .vision-title{
+        font-size: 32px;
+    }
+
+    .section-two .vision .vision-desc{
+        font-size: 16px;
+        width: 600px;
+    }
+
+    .section-two .mission .mission-title{
+        font-size: 28px;
+    }
+
+    .section-two .mission .mission-desc{
+        font-size: 16px;
+        width: 600px;
+    }
+
+    .section-two .history .history-title{
+        font-size: 28px;
+    }
+
+    .section-two .history .history-content  {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .section-two .history .history-content #old_pic{
+        width: 300px;
+        height: 300px;
+    }
+
+    .history .history-content .history-desc .year{
+        font-size: 28px;
+    }
+    .history .history-content .history-desc .year #flag{
+        width: 28px;
+    }
+
+    .history .history-content .history-desc .story{
+        font-size: 14px;
+        width: 250px;
+    }
+
+    /* Footer */
+    .footer .wrapper{
+        align-items: center;
+    }
+
+    .footer hr{
+        width: 100%;
+    }
+
+    .footer .wrapper #logo{
+        margin-bottom: 1.3rem;
+        width: 180px;
+    }
+
+    .footer .footer-content{
+        gap: 5rem;
+        align-items: center;
+    }
+
+    .footer-content .desc-box{
+        align-items: center;
+    }
+
+    .desc-box .desc-content{
+        align-items: center;
+        gap: 12px;
+    }
+
+    .desc-box .form{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .desc-box .form .form-input{
+        width: 12rem;
+    }
+
+    .desc-box .form .form-input::placeholder{
+        font-size: 9px;
+    }
+
+    .desc-box .desc-title{
+        font-size: 14px;
+    }
+
+    .desc-box .desc-content .desc-info p{
+        font-size: 10px;
+    }
+}
+
+/* Max 768px */
+@media only screen and (max-width: 768px) {
+
+    /* Navbar */
+    .navbar{
+        justify-content: space-around;
+    }
+
+    .navbar .logo img{
+        width: 150px;
+    }
+
+    .navbar .navbar-item{
+        display: none;
+    }
+
+    /* Hamburger */
+    .navbar #hamburger-button{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        display: flex; 
+        cursor: pointer;
+    }
+    
+    #hamburger-button #hamburger-img{
+        border: none;
+        width: 70px;
+        height: 70px;  
+    }
+    
+    #hamburger-menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #340303;
+        height: 300px;
+        padding-bottom: 1rem;
+        gap: 26px;
+        animation: dropdown 200ms ease-in-out forwards;
+        transform-origin: top center;
+    }
+    
+    .hamburger-item a{
+        text-decoration: none;
+        text-align: right;
+        color: white;
+        font-size: 16px;
+        display: flex;
+    }
+
+    .hamburger-item a:hover{
+        border-bottom: 1px solid white;
+    }
+
+    /* Section One */
+    .section-one{
+        height: 200px;
+    }
+
+    .section-one .title{
+        font-size: 32px;
+    }
+
+    /* Section Two */
+    .section-two{
+        padding-bottom: 3rem;
+        padding-top: 4rem;
+    }
+
+    .section-two .vision .vision-title{
+        font-size: 26px;
+    }
+
+    .section-two .vision .vision-desc{
+        font-size: 14px;
+        width: 500px;
+    }
+
+    .section-two .mission .mission-title{
+        font-size: 26px;
+    }
+
+    .section-two .mission .mission-desc{
+        font-size: 14px;
+        width: 500px;
+    }
+
+    .section-two .history .history-title{
+        font-size: 26px;
+    }
+
+    .section-two .history .history-content  {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .section-two .history .history-content #old_pic{
+        width: 250px;
+        height: 200px;
+    }
+
+    .history .history-content .history-desc .year{
+        font-size: 24px;
+    }
+    .history .history-content .history-desc .year #flag{
+        width: 24px;
+    }
+
+    .history .history-content .history-desc .story{
+        font-size: 12px;
+        width: 250px;
+    }
+    
+    /* Footer */
+    .footer .wrapper{
+        align-items: center;
+    }
+
+    .footer hr{
+        width: 100%;
+    }
+
+    .footer .wrapper #logo{
+        margin-bottom: 1.3rem;
+        width: 180px;
+    }
+
+    .footer .footer-content{
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .footer-content .desc-box{
+        align-items: center;
+        text-align: center;
+    }
+
+    .desc-box .desc-content{
+        align-items: center;
+        gap: 12px;
+    }
+
+    .desc-box .form{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .desc-box .form .form-input{
+        width: 12rem;
+    }
+
+    .desc-box .form .form-input::placeholder{
+        font-size: 9px;
+    }
+
+    .desc-box .desc-title{
+        font-size: 14px;
+    }
+
+    .desc-box .desc-content .desc-info p{
+        font-size: 10px;
+    }
+}
+
+/* Max 576px */
+@media only screen and (max-width: 576px) {
+    /* Section Two */
+    .section-two .vision .vision-title{
+        font-size: 26px;
+    }
+
+    .section-two .vision .vision-desc{
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .section-two .mission .mission-title{
+        font-size: 26px;
+    }
+
+    .section-two .mission .mission-desc{
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .section-two .history .history-title{
+        font-size: 26px;
+    }
+
+    .section-two .history .history-content #old_pic{
+        width: 170px;
+        height: 220px;
+    }
+
+    .history .history-content .history-desc .year{
+        font-size: 16px;
+    }
+    .history .history-content .history-desc .year #flag{
+        width: 18px;
+    }
+
+    .history .history-content .history-desc .story{
+        font-size: 10px;
+        width: 150px;
+    }
+}
+
+/* Max 360px */
+@media only screen and (max-width: 360px){
+    /* Navbar */
+    .navbar{
+        justify-content: center;    
+    }
+
+    .navbar .logo img{
+        width: 120px;
+    }
+
+    .navbar .navbar-item{
+        display: none;
+    }
+
+    /* Section Two */
+    .section-two{
+        gap: 2.5rem;
+    }
+
+    .section-two .vision .vision-title{
+        font-size: 20px;
+    }
+
+    .section-two .vision .vision-desc{
+        font-size: 12px;
+        width: 210px;
+    }
+
+    .section-two .mission .mission-title{
+        font-size: 20px;
+    }
+
+    .section-two .mission .mission-desc{
+        font-size: 12px;
+        width: 210px;
+    }
+
+    .section-two .history .history-title{
+        font-size: 20px;
+    }
+
+    .section-two .history .history-content #old_pic{
+        width: 120px;
+        height: 150px;
+    }
+
+    .history .history-content .history-desc .year{
+        font-size: 14px;
+    }
+    .history .history-content .history-desc .year #flag{
+        width: 14px;
+    }
+
+    .history .history-content .history-desc .story{
+        font-size: 9px;
+        width: 100px;
+    }
+    
+    /* Footer */
+    .footer hr{
+        width: 230px;
+    }
+
+    .footer .copyright p{
+        font-size: 12px;
+    }
+}

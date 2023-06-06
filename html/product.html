@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERamen | Product</title>
+    <link rel="stylesheet" href="../style/product.css">
+    <link rel="icon" type="image/png" href="../assets/ramen_cartoon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../html/home.html"><img src="../assets/logo.png" alt="logo"></a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/home.html">Home</a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/product.html">Products</a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/promotion.html">Promotion</a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/aboutus.html">About Us</a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/contactus.html">Contact Us</a>
+        </div>
+        <button id="hamburger-button" onclick="toggle()">
+            <img src="../assets/hamburger.png" alt="hamburger" id="hamburger-img">
+        </button>
+    </nav>
+
+    <div id="hamburger-menu">
+        <div class="hamburger-item">
+            <a href="../html/home.html">Home</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/product.html">Products</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/promotion.html">Promotion</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/aboutus.html">About Us</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/contactus.html">Contact Us</a>
+        </div>
+    </div>
+
+    <section class="section-one">
+        <p class="title">OUR PRODUCTS</p>
+        <div class="buttons-list">
+            <button onclick="changeView('#main-dish')">Main Dish</button>
+            <button onclick="changeView('#side-dish')">Side Dish</button>
+            <button onclick="changeView('#drinks')">Drinks</button>
+        </div>
+    </section>
+    
+    <section></section>
+
+    <section class="section-two">
+        <div class="category-box-list">
+            <div class="category-box">
+                <p class="category-title" id="main-dish">Main Dish <span class="yellow-text">メインディッシュ</span></p>
+                <div class="row">
+                    <div class="dish-card">
+                        <img src="../assets/shoyu_ramen_card.png" alt="shoyu_ramen">
+                        <div class="dish-content">
+                            <p class="dish-title">Shoyu Ramen</p>
+                            <p class="dish-desc">
+                                Shoyu ramen is a beloved Japanese noodle dish featuring springy noodles in a rich soy sauce broth. 
+                                Topped with succulent chashu pork, seaweed, a boiled egg, bamboo shoots, and green onion.
+                            </p>
+                            <p class="dish-price">IDR 50K</p>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img src="../assets/shio_ramen_card.png" alt="shio_ramen">
+                        <div class="dish-content">
+                            <p class="dish-title">Shio Ramen</p>
+                            <p class="dish-desc-space">
+                                Shio ramen is a traditional Japanese noodle soup characterized by its clear, 
+                                salt-based broth with ingredients like sliced pork, seaweed, and green onions.
+                            </p>
+                            <p class="dish-price">IDR 55K</p>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img src="../assets/miso_ramen_card.png" alt="miso_ramen">
+                        <div class="dish-content">
+                            <p class="dish-title">Miso Ramen</p>
+                            <p class="dish-desc-space">
+                                Featuring a rich and flavorful broth made with fermented soybean paste, known as miso. 
+                                This savory broth is combined with hearty wheat noodles.
+                            </p>
+                            <p class="dish-price">IDR 45K</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="dish-card">
+                        <img src="../assets/tonkotsu_ramen_card.png" alt="tonkotsu_ramen">
+                        <div class="dish-content">
+                            <p class="dish-title">Tonkotsu Ramen</p>
+                            <p class="dish-desc-space">
+                                Known for its creamy and rich pork bone broth. 
+                                This indulgent broth is simmered for hours to extract deep flavors, resulting in a perfect texture.
+                            </p>
+                            <p class="dish-price">IDR 60K</p>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img src="../assets/akayu_ramen_card.png" alt="akayu_ramen">
+                        <div class="dish-content">
+                            <p class="dish-title">Akayu Ramen</p>
+                            <p class="dish-desc-space">
+                                Akayu ramen is a variation of ramen that features a vibrant red broth made from 
+                                chili peppers and other spices, lending it a fiery and bold flavor profile. 
+                            </p>
+                            <p class="dish-price">IDR 70K</p>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img src="../assets/hiyashi_chuka_ramen_card.png" alt="hiyashi_chuka_ramen">
+                        <div class="dish-content">
+                            <p class="dish-title">Hiyashi Chuka Ramen</p>
+                            <p class="dish-desc">
+                                Cold ramen noodles topped with a colorful array of ingredients such as sliced cucumber, 
+                                ham, eggs, and a tangy soy-based dressing, creating a delightful and cooling flavor combination.
+                            </p>
+                            <p class="dish-price">IDR 40K</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-box">
+                <p class="category-title" id="side-dish">Side Dish <span class="yellow-text">おかず</span></p>
+                <div class="row">
+                    <div class="dish-card">
+                        <img src="../assets/ebi_tempura.png" alt="ebi_tempura">
+                        <div class="dish-content">
+                            <p class="dish-title">Ebi Tempura</p>
+                            <p class="dish-desc">
+                                Ebi tempura is a traditional Japanese dish consisting of succulent, crispy-battered shrimp. 
+                                The shrimp is expertly deep-fried to achieve a golden exterior while retaining its tender and juicy texture.
+                            </p>
+                            <p class="dish-price">IDR 20K</p>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img src="../assets/yasai_tempura.png" alt="yasai_tempura">
+                        <div class="dish-content">
+                            <p class="dish-title">Yasai Tempura</p>
+                            <p class="dish-desc">
+                                Yasai tempura is a vegetarian variation of the popular Japanese tempura dish. 
+                                It features an assortment of fresh and seasonal vegetables, such as sweet potato, and eggplant.
+                            </p>    
+                            <p class="dish-price">IDR 15K</p>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img src="../assets/kakiage_tempura.png" alt="kakiage_tempura">
+                        <div class="dish-content">
+                            <p class="dish-title">Kakiage Tempura</p>
+                            <p class="dish-desc">
+                                Kakiage tempura is a type of tempura made by mixing various vegetables and seafood together and 
+                                frying them in a delicate batter. The resulting dish showcases a beautiful flavors.
+                            </p>
+                            <p class="dish-price">IDR 12K</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="dish-card">
+                        <img src="../assets/kisu_tempura.png" alt="kisu_tempura">
+                        <div class="dish-content">
+                            <p class="dish-title">Kisu Tempura</p>
+                            <p class="dish-desc">
+                                Kisu tempura is a Japanese dish featuring lightly battered and deep-fried sandfish. 
+                                The sandfish, also known as kisu, is a delicate white fish with a mild and sweet flavor, and when cooked as tempura.
+                            </p>
+                            <p class="dish-price">IDR 25K</p>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img src="../assets/ika_tempura.png" alt="ika_tempura">
+                        <div class="dish-content">
+                            <p class="dish-title">Ika Tempura</p>
+                            <p class="dish-desc">
+                                Ika tempura is a delightful Japanese dish that consists of squid lightly coated in
+                                a crispy tempura batter and fried to perfection. The result is a squid with a crunchy exterior.
+                            </p>
+                            <p class="dish-price">IDR 30K</p>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img src="../assets/kabocha_tempura.png" alt="kabocha_tempura">
+                        <div class="dish-content">
+                            <p class="dish-title">Kabocha Tempura</p>
+                            <p class="dish-desc-space">
+                                Kabocha tempura is a delightful Japanese dish featuring slices of kabocha 
+                                squash that are coated in a light tempura batter and fried until golden and crispy. 
+                            </p>
+                            <p class="dish-price">IDR 18K</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-box">
+                <p class="category-title" id="drinks">Drinks <span class="yellow-text">飲み物</span></p>
+                <div class="row">
+                    <div class="dish-card">
+                        <img src="../assets/iced_lemon_tea.png" alt="iced_lemon_tea">
+                        <div class="dish-content">
+                            <p class="dish-title">Iced Lemon Tea</p>
+                            <p class="dish-desc">
+                                Lemon tea is a refreshing beverage made by combining iced tea with the tangy, citrusy flavor of fresh lemon juice. 
+                                The bright and zesty taste of lemon adds a delightful twist to the traditional tea.
+                            </p>
+                            <p class="dish-price">IDR 10K</p>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img src="../assets/ocha_tea.png" alt="ocha_tea">
+                        <div class="dish-content">
+                            <p class="dish-title">Ocha Tea</p>
+                            <p class="dish-desc">
+                                Ocha tea, commonly known as green tea, is a popular Japanese beverage made from the leaves 
+                                of Camellia sinensis. It is celebrated for its vibrant green color and earthy aroma.
+                            </p>    
+                            <p class="dish-price">IDR 12K</p>
+                        </div>
+                    </div>
+                    <div class="dish-card">
+                        <img src="../assets/orange_juice.png" alt="orange_juice">
+                        <div class="dish-content">
+                            <p class="dish-title">Orange Juice</p>
+                            <p class="dish-desc">
+                                Orange juice is a popular citrus beverage made by extracting the juice from oranges. 
+                                It has a bright, tangy flavor with a natural sweetness, offering a refreshing and vitamin-rich option.
+                            </p>
+                            <p class="dish-price">IDR 15K</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <img src="../assets/logo_2.png" alt="logo" id="logo">
+            <div class="footer-content">
+                <div class="desc-box">
+                    <p class="desc-title">Information</p>
+                    <div class="desc-content">
+                        <div class="desc-info">
+                            <img src="../assets/location.png" alt="location" class="info-logo">
+                            <p>Sudirman Street No.54</p>
+                        </div>
+                        <div class="desc-info">
+                            <img src="../assets/phone.png" alt="location" class="info-logo">
+                            <p>(555) 123-4567</p>
+                        </div>
+                        <div class="desc-info">
+                            <img src="../assets/clock.png" alt="location" class="info-logo">
+                            <p>09.00 - 21.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc-box">
+                    <p class="desc-title">Social Media</p>
+                    <div class="desc-content">
+                        <div class="desc-info">
+                            <a href="https://www.instagram.com/eramen.official"><img src="../assets/instagram.png" alt="location" class="social-logo"></a>
+                            <p>@eramen.official</p>
+                        </div>
+                        <div class="desc-info">
+                            <a href="https://twitter.com/eramenstore"><img src="../assets/twitter.png" alt="location" class="social-logo"></a>
+                            <p>@eramenstore</p>
+                        </div>
+                        <div class="desc-info">
+                            <a href="https://www.facebook.com/eramenstore/"><img src="../assets/facebook.png" alt="location" class="social-logo"></a>
+                            <p>ERamen Store</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc-box">
+                    <p class="desc-title">Get the latest news from ERamen</p>
+                     <form action="" class="form">
+                        <input type="text" class="form-input" placeholder="Enter your email address" name="email">
+                        <button class="form-button" type="reset"><p>Subscribe</p></button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>Copyright © 2023 ERamen</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../script/product.js"></script>
+</body>
+</html>

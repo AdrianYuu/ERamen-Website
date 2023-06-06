@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERamen | Contact Us</title>
+    <link rel="stylesheet" href="../style/contactus.css">
+    <link rel="icon" type="image/png" href="../assets/ramen_cartoon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../html/home.html"><img src="../assets/logo.png" alt="logo"></a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/home.html">Home</a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/product.html">Products</a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/promotion.html">Promotion</a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/aboutus.html">About Us</a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/contactus.html">Contact Us</a>
+        </div>
+        <button id="hamburger-button" onclick="toggle()">
+            <img src="../assets/hamburger.png" alt="hamburger" id="hamburger-img">
+        </button>
+    </nav>
+
+    <div id="hamburger-menu">
+        <div class="hamburger-item">
+            <a href="../html/home.html">Home</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/product.html">Products</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/promotion.html">Promotion</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/aboutus.html">About Us</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/contactus.html">Contact Us</a>
+        </div>
+    </div>
+
+    <section class="section-one">
+        <div class="title">
+            <p>Want To Know More?</p>
+            <p>Contact Us!</p>
+        </div>
+        <div class="box">
+            <div class="jpn-text">
+                <p>お</p>
+                <p>問</p>
+                <p>い</p>
+                <p>合</p>
+                <p>わ</p>
+                <p>せ</p>
+                <p>を</p>
+                <p>し</p>
+                <p>て</p>
+                <p>当</p>
+                <p>社</p>
+                <p>を</p>
+                <p>も</p>
+                <p>っ</p>
+                <p>ー</p>
+                <p>メ</p>
+            </div>
+            <div class="wrapper-form">
+                <form action="" class="form" id="formContact" method="GET">
+                    <div class="input-form">
+                        <label for="fullname" class="label">Full Name</label>
+                        <input type="text" class="input" name="fullname" id="fullname">
+                        <p id="error-name" class="error-msg"></p>
+                    </div>
+                    <div class="input-form">
+                        <label for="email" class="label">Email Address</label>
+                        <input type="text" class="input" name="email" id="email">
+                        <p id="error-email" class="error-msg"></p>
+                    </div>
+                    <div class="input-form">
+                        <label for="phonenumber" class="label" class="label">Phone Number</label>
+                        <input type="text" class="input" name="phonenumber" id="phonenumber">
+                        <p id="error-phone" class="error-msg"></p>
+                    </div>
+                    <div class="input-form">
+                        <label class="label">Preferences</label>
+                        <div class="preferences">
+                            <div class="radio-button">
+                                <input type="radio" name="preferences" id="ramen" value="ramen">
+                                <label for="ramen">Ramen</label>
+                            </div>
+                            <div class="radio-button">
+                                <input type="radio" name="preferences" id="dryramen" value="dryramen">
+                                <label for="dryramen">Dry Ramen</label>
+                            </div>
+                        </div>
+                        <p id="error-preferences" class="error-msg"></p>
+                    </div>
+                    <div class="input-form-check">
+                        <div class="agree-box">
+                            <input type="checkbox" name="agree" id="agree" value="agree">
+                            <label for="agree">Agree to receive newsletter about ERamen latest updates</label>
+                        </div>
+                        <p id="error-agree" class="error-msg"></p>
+                    </div>
+                </form>
+                <div class="button-submit">
+                    <button onclick="submitForm()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <img src="../assets/logo_2.png" alt="logo" id="logo">
+            <div class="footer-content">
+                <div class="desc-box">
+                    <p class="desc-title">Information</p>
+                    <div class="desc-content">
+                        <div class="desc-info">
+                            <img src="../assets/location.png" alt="location" class="info-logo">
+                            <p>Sudirman Street No.54</p>
+                        </div>
+                        <div class="desc-info">
+                            <img src="../assets/phone.png" alt="location" class="info-logo">
+                            <p>(555) 123-4567</p>
+                        </div>
+                        <div class="desc-info">
+                            <img src="../assets/clock.png" alt="location" class="info-logo">
+                            <p>09.00 - 21.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc-box">
+                    <p class="desc-title">Social Media</p>
+                    <div class="desc-content">
+                        <div class="desc-info">
+                            <a href="https://www.instagram.com/eramen.official"><img src="../assets/instagram.png" alt="location" class="social-logo"></a>
+                            <p>@eramen.official</p>
+                        </div>
+                        <div class="desc-info">
+                            <a href="https://twitter.com/eramenstore"><img src="../assets/twitter.png" alt="location" class="social-logo"></a>
+                            <p>@eramenstore</p>
+                        </div>
+                        <div class="desc-info">
+                            <a href="https://www.facebook.com/eramenstore/"><img src="../assets/facebook.png" alt="location" class="social-logo"></a>
+                            <p>ERamen Store</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc-box">
+                    <p class="desc-title">Get the latest news from ERamen</p>
+                     <form action="" class="form">
+                        <input type="text" class="form-input" placeholder="Enter your email address" name="email">
+                        <button class="form-button" type="reset"><p>Subscribe</p></button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>Copyright © 2023 ERamen</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../script/contactus.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERamen | Home</title>
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="icon" type="image/png" href="../assets/ramen_cartoon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../html/home.html"><img src="../assets/logo.png" alt="logo"></a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/home.html">Home</a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/product.html">Products</a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/promotion.html">Promotion</a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/aboutus.html">About Us</a>
+        </div>
+        <div class="navbar-item">
+            <a href="../html/contactus.html">Contact Us</a>
+        </div>
+        <button id="hamburger-button" onclick="toggle()">
+            <img src="../assets/hamburger.png" alt="hamburger" id="hamburger-img">
+        </button>
+    </nav>
+
+    <div id="hamburger-menu">
+        <div class="hamburger-item">
+            <a href="../html/home.html">Home</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/product.html">Products</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/promotion.html">Promotion</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/aboutus.html">About Us</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/contactus.html">Contact Us</a>
+        </div>
+    </div>
+
+    <section class="section-one">
+        <img src="../assets/shoyu_ramen.png" alt="shoyu_ramen">
+        <div class="section-one-content">
+            <p class="new-title">NEW !</p>
+            <p class="new-name"><span class="yellow-text">SHOYU</span> RAMEN</p>
+            <p class="new-desc">
+                Shoyu ramen is a beloved Japanese noodle dish featuring springy noodles in a rich 
+                soy sauce broth. Topped with succulent chashu pork, seaweed, 
+                a boiled egg, bamboo shoots, and green onion.
+            </p>
+            <p class="new-additional">ラーメンはとてもおいしいです</p>
+        </div>
+    </section>
+
+    <section class="section-two">
+        <p class="promotion-title">Eat the <span class="yellow-text">best ramen</span> in the town!</p>
+        <div class="wrapper">
+            <button onclick="commandArrow(-1)" class="arrow"><img src="../assets/arrow_left.png" alt="arrow_left"></button>
+            <div class="box">
+                <div class="promotion-box" id="box-1">
+                    <div class="left-content">
+                        <p class="title">Savor The Flavor!</p>
+                        <p class="desc">feel the taste of the shio ramen</p>
+                        <p class="additional">塩ラーメンはとても美味しいです</p>
+                    </div>
+                    <img src="../assets/shio_ramen.png" alt="shio_ramen">
+                </div>
+                <div class="promotion-box" id="box-2">
+                    <div class="left-content">
+                        <p class="title">Besides Ramen</p>
+                        <p class="desc">we also have many kind of tempuras</p>
+                        <p class="additional">天ぷら類も多数ご用意しております</p>
+                    </div>
+                    <img src="../assets/tempura.png" alt="tempura">
+                </div>
+                <div class="promotion-box" id="box-3">
+                    <div class="left-content">
+                        <p class="title">Delicious & Tasty</p>
+                        <p class="desc">try the unique cold ramen</p>
+                        <p class="additional">ユニークな冷やしラーメンを試</p>
+                    </div>
+                    <img src="../assets/cold_ramen.png" alt="cold_ramen">
+                </div>
+                <div class="button-list">
+                    <button class="command-button" onclick="commandButton(0)" id="btn-1"></button>
+                    <button class="command-button" onclick="commandButton(1)" id="btn-2"></button>
+                    <button class="command-button" onclick="commandButton(2)" id="btn-3"></button>
+                </div>
+            </div>
+            <button onclick="commandArrow(1)" class="arrow"><img src="../assets/arrow_right.png" alt="arrow_right"></button>  
+        </div>
+    </section>
+
+    <section class="section-three">
+        <p class="best-title">BEST <span class="yellow-text">SELLER</span></p>
+        <div class="card-list">
+            <div class="card">
+                <img src="../assets/shio_ramen_2.png" alt="shio_ramen">
+                <div class="card-content">
+                    <p class="card-title">Shio Ramen</p>
+                    <p class="card-desc">
+                        Shio ramen is a traditional Japanese noodle soup characterized by its clear, 
+                        salt-based broth with ingredients like sliced pork, seaweed, and green onions.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/miso_ramen.png" alt="miso_ramen">
+                <div class="card-content">
+                    <p class="card-title">Miso Ramen</p>
+                    <p class="card-desc">
+                        Featuring a rich and flavorful broth made with fermented soybean paste, known as miso. 
+                        This savory broth is combined with hearty wheat noodles.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/tonkotsu_ramen.png" alt="tonkotsu_ramen">
+                <div class="card-content">
+                    <p class="card-title">Tonkotsu Ramen</p>
+                    <p class="card-desc">
+                        Known for its creamy and rich pork bone broth. This indulgent broth is simmered for hours 
+                        to extract deep flavors, resulting in a perfect texture.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <img src="../assets/logo_2.png" alt="logo" id="logo">
+            <div class="footer-content">
+                <div class="desc-box">
+                    <p class="desc-title">Information</p>
+                    <div class="desc-content">
+                        <div class="desc-info">
+                            <img src="../assets/location.png" alt="location" class="info-logo">
+                            <p>Sudirman Street No.54</p>
+                        </div>
+                        <div class="desc-info">
+                            <img src="../assets/phone.png" alt="location" class="info-logo">
+                            <p>(555) 123-4567</p>
+                        </div>
+                        <div class="desc-info">
+                            <img src="../assets/clock.png" alt="location" class="info-logo">
+                            <p>09.00 - 21.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc-box">
+                    <p class="desc-title">Social Media</p>
+                    <div class="desc-content">
+                        <div class="desc-info">
+                            <a href="https://www.instagram.com/eramen.official"><img src="../assets/instagram.png" alt="location" class="social-logo"></a>
+                            <p>@eramen.official</p>
+                        </div>
+                        <div class="desc-info">
+                            <a href="https://twitter.com/eramenstore"><img src="../assets/twitter.png" alt="location" class="social-logo"></a>
+                            <p>@eramenstore</p>
+                        </div>
+                        <div class="desc-info">
+                            <a href="https://www.facebook.com/eramenstore/"><img src="../assets/facebook.png" alt="location" class="social-logo"></a>
+                            <p>ERamen Store</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc-box">
+                    <p class="desc-title">Get the latest news from ERamen</p>
+                    <form action="" class="form">
+                        <input type="text" class="form-input" placeholder="Enter your email address" name="email">
+                        <button class="form-button" type="reset"><p>Subscribe</p></button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>Copyright © 2023 ERamen</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../script/home.js"></script>
+</body>
+</html>
